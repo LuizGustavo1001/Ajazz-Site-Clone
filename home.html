@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <title>AJAZZ Store - ajazz keyboard</title>
+    <title>AJAZZ Store</title>
 </head>
 
 <body>
@@ -36,7 +36,12 @@
 
             <ul>
                 <li><a href="#">Sign In</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">search</span></a></li>
+                <li>
+                    <form action="/search" method="get">
+                        <button type="submit"><span class="material-symbols-outlined">search</span></button>
+                        <input type="text" name="qdsad" placeholder="Search...">
+                    </form>
+                </li>
                 <li><a href="#"><span class="material-symbols-outlined">favorite</span></a></li>
                 <li><a href="#"><span class="material-symbols-outlined">shopping_cart</span></a></li>
             </ul>
@@ -91,21 +96,21 @@
             <h1>New Arrivals</h1>
 
             <div class="top-arrivals">
-                <div class="top-arrivals-item">
+                <div class="top-arrivals-item" id="animated-image">
                     <a href="#">
                         <img src="images/newArrivals/Alice-layout.jpg" alt="75% Alice Layout Wireless Gaming Keyboard">
                         <p>75% Alice Layout Wireless Gaming Keyboard</p>
                     </a>
                     <p><strong>AJAZZ AKS075</strong></p>
                 </div>
-                <div class="top-arrivals-item">
+                <div class="top-arrivals-item" id="animated-image">
                     <a href="#">
                         <img src="images/newArrivals/blue-layout.jpg" alt="68% Mechanical Keyboard With Magnetic Switch">
                         <p>68% Mechanical Keyboard With Magnetic Switch</p>
                     </a>
                     <p><strong>AJAZZ AK680 MAX</strong></p>
                 </div>
-                <div class="top-arrivals-item">
+                <div class="top-arrivals-item" id="animated-image">
                     <a href="#">
                         <img src="images/newArrivals/grey-layout.jpg" alt="65% Gasket TRI-mode Mechanical Keyboard">
                         <p>65% Gasket TRI-mode Mechanical Keyboard <br></p>
@@ -116,9 +121,11 @@
 
             <div class="other-arrivals">
 
-                <div class="other-arrivals-item">
-                    <a href=""><img src="images/otherArrivals/keyboard1.jpg" alt="AJAZZ AK680 MAX Wireless - Grey"></a>
-                    <p><a href="#">AJAZZ AK680 MAX Wireless - Grey</a></p>
+                <div class="other-arrivals-item" id="animated-image">
+                    <a href="#">
+                        <img src="images/otherArrivals/keyboard1.jpg" alt="Ajazz Aj129 - White">
+                        <p>AJAZZ AK680 MAX Wireless </p>
+                    </a>
                     <span class="before-price">
                         <p>$46.99</p>
                     </span>
@@ -127,9 +134,11 @@
                     </span>
                 </div>
 
-                <div class="other-arrivals-item">
-                    <a href="#"><img src="images/otherArrivals/mouse1.jpg" alt="Ajazz Aj129 - White"></a>
-                    <p><a href="">Ajazz Aj129 - White</a></p>
+                <div class="other-arrivals-item" id="animated-image">
+                    <a href="#">
+                        <img src="images/otherArrivals/mouse1.jpg" alt="Ajazz Aj129 - White">
+                        <p>Ajazz Aj129 - White</p>
+                    </a>
                     <span class="before-price">
                         <p>$46.99</p>
                     </span>
@@ -138,9 +147,11 @@
                     </span>
                 </div>
 
-                <div class="other-arrivals-item">
-                    <a href="#"><img src="images/otherArrivals/mouse2.jpg" alt="AJAZZ Aj358 - Pink"></a>
-                    <p><a href="">AJAZZ Aj358 - Pink</a></p>
+                <div class="other-arrivals-item" id="animated-image">
+                    <a href="#">
+                        <img src="images/otherArrivals/mouse2.jpg" alt="AJAZZ Aj358 - Pink">
+                        <p>AJAZZ Aj358 - Pink</p>
+                    </a>
                     <span class="before-price">
                         <p>$46.99</p>
                     </span>
@@ -149,9 +160,11 @@
                     </span>
                 </div>
 
-                <div class="other-arrivals-item">
-                    <a href="#"><img src="images/otherArrivals/keyboard2.jpg" alt="AJAZZ AK871 - White"></a>
-                    <p><a href="">AJAZZ AK871 - White</a></p>
+                <div class="other-arrivals-item" id="animated-image">
+                    <a href="#">
+                        <img src="images/otherArrivals/keyboard2.jpg" alt="AJAZZ AK871 - White">
+                        <p>AJAZZ AK871 - White</p>
+                    </a>
                     <span class="before-price">
                         <p>$46.99</p>
                     </span>
@@ -160,9 +173,11 @@
                     </span>
                 </div>
 
-                <div class="other-arrivals-item">
-                    <a href="#"><img src="images/otherArrivals/boungy1.jpg" alt=""></a>
-                    <p><a href="">AJAZZ AM100 Flexible Cable Management System - Pink</a></p>
+                <div class="other-arrivals-item" id="animated-image">
+                    <a href="#">
+                        <img src="images/otherArrivals/boungy1.jpg" alt="AJAZZ AK871 - White">
+                        <p>AJAZZ Cable Management</p>
+                    </a>
                     <span class="before-price">
                         <p>$46.99</p>
                     </span>
