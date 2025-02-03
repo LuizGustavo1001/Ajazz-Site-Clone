@@ -47,9 +47,17 @@ a {
     text-decoration: none;
 
 }
+
+button{
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+}
+
 input{
     border:none;
     padding:1em;
+    font-family: "Jost", sans-serif;
+    font-weight: bolder;
 }
 
 form{
@@ -69,6 +77,20 @@ form button{
     gap:1.5em;
     align-items: center;
     
+}
+
+#header-nav-right a{
+    font-size: 0.8em;
+}
+
+.section-title h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 10px;
+    margin:2em;
+
 }
 
 .brand-image {
@@ -104,7 +126,6 @@ form button{
 }
 
 .brand-image button{
-    font-family: "Jost", sans-serif;
     font-weight: bolder;
     font-size: 1em;
     background: white;
@@ -128,7 +149,6 @@ form button{
     background: whitesmoke;
     display: flex;
     gap:2em;
-    margin-bottom: 5em;
 
 }
 
@@ -147,15 +167,6 @@ form button{
 
 }
 
-.new-arrivals h1 {
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-decoration-style: dashed;
-    text-underline-offset: 0.2em;
-
-}
-
 .top-arrivals {
     margin-block:2.5em;
     display: flex;
@@ -171,7 +182,6 @@ form button{
 
 .top-arrivals-item {
     text-align: center;
-    transition-duration: 0.5s;
 }
 
 .top-arrivals-item p{
@@ -188,8 +198,14 @@ form button{
 
 }
 
+#animated-image {
+    transition: transform 0.5s ease-in-out;
+}
+
 #animated-image:hover{
     transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+    
 }
 
 
@@ -205,10 +221,9 @@ form button{
 
 .other-arrivals-item {
     padding: 5%;
-    background: rgba(224, 147, 147, 0.26);
+    background: rgba(255, 255, 255, 0.178);
     display: grid;
     justify-content: center;
-    transition-duration: 0.5s;
 }
 
 .other-arrivals-item img {
@@ -219,13 +234,171 @@ form button{
     border-bottom: 1px solid red;
 }
 
+.other-arrivals-item button {
+    padding:5%;
+    border-radius: 20px;
+    border: none;
+    transition-duration: 0.5s;
+}
+
+.other-arrivals-item button:hover {
+    background: rgb(211, 12, 12);
+    color: white;
+}
+
+.price{
+    padding-top:0.5em;
+    display: flex;
+    gap:1em;
+}
+
 .before-price{
-    color: rgb(100, 99, 99);
+    color: rgb(63, 63, 63);
     text-decoration: line-through;
 }
 
 .now-price{
-    color: rgb(136, 0, 0);
+    color: rgb(179, 1, 1);
+    font-weight: bold;
 }
 
+.section-itens{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
 
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto;
+
+}
+
+.best-seller-item{
+    margin-inline:1em;
+    width: 400px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:6em;
+
+}
+
+.best-seller-item a{
+    color: white;
+}
+
+.best-seller-item h2{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.best-seller-item h3,h2,p {
+    padding:0.5em;
+}
+
+.best-seller-item-double a{
+    color: white;
+}
+
+.sub {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    align-items:start;
+
+}
+
+.mini {
+    display: flex;
+    flex-direction: column;
+    gap:1.5em;
+    width: 350px;
+    height: 250px;
+    
+}
+
+.best-seller-item-double {
+    text-align: center;
+    display: block;
+    
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+#best-seller-item-double-1 ,#best-seller-item-double-2, #best-seller-item-double-3,#best-seller-item-double-4{
+    width: 350px;
+    height: 250px;
+}
+
+#best-seller-item-1 {
+    background: url(images/bestSellers/ak820alt.jpg);
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#best-seller-item-2 {
+    background:url(images/bestSellers/ak820-max-he.jpg);
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#best-seller-item-3 {
+    background:url(images/bestSellers/aj159alt.jpg);
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#best-seller-item-4 {
+    background:url(images/bestSellers/AK980.webp);
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#best-seller-item-double-1{
+    background:url(images/bestSellers/ak650.jpg);
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#best-seller-item-double-2{
+    background:url(images/bestSellers/ak680alt.jpg);
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#best-seller-item-double-3{
+    background:url(images/bestSellers/ak870.jpg);
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#best-seller-item-double-4{
+    background:url(images/bestSellers/ak820-max.jpg);
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
