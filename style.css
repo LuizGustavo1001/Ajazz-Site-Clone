@@ -18,14 +18,14 @@ header {
 
 }
 
-header img{
+header img {
     width: 100px;
     padding-left: 1.5em;
 
 }
 
-nav{
-    padding:2em;
+nav {
+    padding: 2em;
 
 }
 
@@ -33,8 +33,9 @@ nav ul {
     list-style-type: none;
 
 }
+
 nav a {
-    color:black;
+    color: black;
     text-decoration: none;
     font-weight: bolder;
     font-size: 1.5em;
@@ -48,48 +49,56 @@ a {
 
 }
 
-button{
+button {
     font-family: "Jost", sans-serif;
     font-weight: bold;
 }
 
-input{
-    border:none;
-    padding:1em;
+input {
+    border: none;
+    padding: 1em;
     font-family: "Jost", sans-serif;
     font-weight: bolder;
 }
 
-form{
-    display:inline-flex;
-    gap:1em;
+form {
+    display: inline-flex;
+    gap: 1em;
 }
 
-form button{ 
+form button {
     border: none;
     background: transparent;
 }
 
 
-.header-nav ul{
+.header-nav ul {
     display: flex;
     flex-direction: row;
-    gap:1.5em;
+    gap: 1.5em;
     align-items: center;
-    
+
 }
 
-#header-nav-right a{
+#header-nav-right a {
     font-size: 0.8em;
+
 }
 
-.section-title h1{
+.section-title h1 {
     text-align: center;
     text-decoration: underline;
     text-decoration-style: dashed;
     text-decoration-thickness: 4px;
     text-underline-offset: 10px;
-    margin:2em;
+    margin: 2em;
+
+}
+
+.bg-title {
+    background: url(images/bgalt.png);
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -100,37 +109,38 @@ form button{
     background-position: center;
 
     color: whitesmoke;
-    
+
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
-    
-}
-
-.brand-image h1, p{
-    margin-bottom:0.5em;
 
 }
 
-.brand-image h1{
+.brand-image h1,
+p {
+    margin-bottom: 0.5em;
+
+}
+
+.brand-image h1 {
     font-size: 2.5em;
-    
+
 }
 
-.brand-image p{
+.brand-image p {
     color: lightgrey;
     font-size: 1.5em;
 
 }
 
-.brand-image button{
+.brand-image button {
     font-weight: bolder;
     font-size: 1em;
     background: white;
     border: none;
-    padding-block:1em;
+    padding-block: 1em;
     padding-inline: 5em;
     border-radius: 25px;
     transition-duration: 0.5s;
@@ -144,31 +154,31 @@ form button{
 }
 
 
-.main-about{
-    padding:3em;
+.main-about {
+    padding: 3em;
     background: whitesmoke;
     display: flex;
-    gap:2em;
+    gap: 2em;
 
 }
 
-.main-about img{
+.main-about img {
     width: 50px;
 
 }
 
 .about-text p {
-    font-size:1.1em;
+    font-size: 1.1em;
 
 }
 
-.new-arrivals{  
+.new-arrivals {
     background: white;
 
 }
 
 .top-arrivals {
-    margin-block:2.5em;
+    margin-block: 2.5em;
     display: flex;
     gap: 2em;
     justify-content: center;
@@ -180,15 +190,12 @@ form button{
 
 }
 
-.top-arrivals-item {
-    text-align: center;
-}
-
-.top-arrivals-item p{
+.top-arrivals-item p {
     background: rgba(245, 245, 245, 0.603);
-    padding:0.5em; 
+    padding: 0.5em;
     margin: 0;
-    
+    text-align: center;
+
 }
 
 .top-arrivals-item p strong {
@@ -199,24 +206,24 @@ form button{
 }
 
 #animated-image {
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
-#animated-image:hover{
+#animated-image:hover {
     transform: scale(1.05);
-    transition: transform 0.5s ease-in-out;
-    
+    transition: transform 1s ease-in-out;
+
 }
 
 
 .other-arrivals {
-    padding:1.2em;
+    padding: 1.2em;
     background: rgba(0, 0, 0, 0.226);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    
-    gap:1.5em;
-    
+
+    gap: 1.5em;
+
 }
 
 .other-arrivals-item {
@@ -224,6 +231,8 @@ form button{
     background: rgba(255, 255, 255, 0.178);
     display: grid;
     justify-content: center;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgb(71, 0, 0);
 }
 
 .other-arrivals-item img {
@@ -235,38 +244,43 @@ form button{
 }
 
 .other-arrivals-item button {
-    padding:5%;
+    padding: 5%;
     border-radius: 20px;
     border: none;
     transition-duration: 0.5s;
+    text-align: center;
 }
 
 .other-arrivals-item button:hover {
-    background: rgb(211, 12, 12);
+    background: #d30c0c;
     color: white;
 }
 
-.price{
-    padding-top:0.5em;
+.price {
+    padding-top: 0.5em;
     display: flex;
-    gap:1em;
+    gap: 1em;
+
 }
 
-.before-price{
+.before-price {
     color: rgb(63, 63, 63);
     text-decoration: line-through;
+
 }
 
-.now-price{
+.now-price {
     color: rgb(179, 1, 1);
     font-weight: bold;
+
 }
 
-.section-itens{
+.section-itens {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .main {
@@ -276,8 +290,8 @@ form button{
 
 }
 
-.best-seller-item{
-    margin-inline:1em;
+.best-seller-item {
+    margin-inline: 1em;
     width: 400px;
     height: 500px;
 
@@ -286,119 +300,281 @@ form button{
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-bottom:6em;
+    margin-bottom: 6em;
+
+    border: 3px solid black;
 
 }
 
-.best-seller-item a{
+.best-seller-item a {
     color: white;
+
 }
 
-.best-seller-item h2{
+.best-seller-item h2 {
     text-decoration: underline;
     text-underline-offset: 10px;
+
 }
 
 .best-seller-item h3,h2,p {
-    padding:0.5em;
+    padding: 0.5em;
+
 }
 
-.best-seller-item-double a{
+.best-seller-item-double a {
     color: white;
+
 }
 
 .sub {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
-    align-items:start;
+    align-items: start;
 
 }
 
 .mini {
     display: flex;
     flex-direction: column;
-    gap:1.5em;
+    gap: 1.5em;
     width: 350px;
     height: 250px;
-    
+
 }
 
 .best-seller-item-double {
     text-align: center;
     display: block;
-    
+
     color: white;
     text-decoration: underline;
     text-underline-offset: 10px;
+
 }
 
-#best-seller-item-double-1 ,#best-seller-item-double-2, #best-seller-item-double-3,#best-seller-item-double-4{
+#best-seller-item-double-1,#best-seller-item-double-2,#best-seller-item-double-3,#best-seller-item-double-4 {
     width: 350px;
     height: 250px;
+
 }
 
 #best-seller-item-1 {
     background: url(images/bestSellers/ak820alt.jpg);
-    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
+
 }
 
 #best-seller-item-2 {
-    background:url(images/bestSellers/ak820-max-he.jpg);
-    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(images/bestSellers/ak820-max-he.jpg);
+
 }
 
 #best-seller-item-3 {
-    background:url(images/bestSellers/aj159alt.jpg);
-    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(images/bestSellers/aj159alt.jpg);
+
 }
 
 #best-seller-item-4 {
-    background:url(images/bestSellers/AK980.webp);
+    background: url(images/bestSellers/AK980.webp);
+
+}
+
+#best-seller-item-1,#best-seller-item-2,#best-seller-item-3,#best-seller-item-4 {
     box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+}
+
+#best-seller-item-double-1 {
+    background: url(images/bestSellers/ak650.jpg);
+
+}
+
+#best-seller-item-double-2 {
+    background: url(images/bestSellers/ak680alt.jpg);
+
+}
+
+#best-seller-item-double-3 {
+    background: url(images/bestSellers/ak870.jpg);
+
+}
+
+#best-seller-item-double-4 {
+    background: url(images/bestSellers/ak820-max.jpg);
+
+
+}
+
+#best-seller-item-double-1,#best-seller-item-double-2,#best-seller-item-double-3,#best-seller-item-double-4 {
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.collections-feature {
+    display: flex;
+    gap: 1em;
+    margin-inline: 1em;
+    justify-content: center;
+}
+
+.collections-feature-item {
+    width: 250px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
     
 }
 
-#best-seller-item-double-1{
-    background:url(images/bestSellers/ak650.jpg);
+.collections-feature-item:hover {
+    transform: scale(1.1);
+
+}
+
+.collections-feature-item h1 {
+    color: white;
+
+}
+
+.collections-feature-item button {
+    display: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    transition-duration: 0.5s;
+
+}
+
+.collections-feature-item:hover button {
+    display: block;
+
+}
+
+.collections-feature-item button:hover {
+    background-color: #d30c0c;
+    color: white;
+
+}
+
+
+#collections-feature-item-1 {
+    background: url(images/collections/keyboards.webp);
+}
+
+#collections-feature-item-2 {
+    background: url(images/collections/gaming-mice.jpg);
+}
+
+#collections-feature-item-3 {
+    background: url(images/collections/switches-alt.jpg);
+}
+
+#collections-feature-item-4 {
+    background: url(images/collections/headphones.webp);
+}
+
+#collections-feature-item-5 {
+    background: url(images/collections/sales-alt.jpg);
+
+}
+
+#collections-feature-item-1,#collections-feature-item-2,#collections-feature-item-3,#collections-feature-item-4,#collections-feature-item-5 {
     box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#best-seller-item-double-2{
-    background:url(images/bestSellers/ak680alt.jpg);
-    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.view-all {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
 }
 
-#best-seller-item-double-3{
-    background:url(images/bestSellers/ak870.jpg);
-    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.view-all button {
+    padding-block: 1em;
+    padding-inline: 7em;
+
+    border-radius: 50px;
+    background: transparent;
+
+    font-size: 1.2em;
+    transition-duration: 0.5s;
 }
 
-#best-seller-item-double-4{
-    background:url(images/bestSellers/ak820-max.jpg);
-    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.288);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.view-all button:hover {
+    background-color: #d30c0c;
+    color: white;
+    border: 1px solid #d30c0c;
 }
+/*-----------------------------------------------------------------*/
+/*FOR WHAT */
+
+.for-what{
+    margin:0.5em;
+
+}
+
+.for-what img{
+    width: 680px;
+    height: 480px;
+
+}
+
+.for-what-div{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+.for-what-div h1{
+    text-decoration: underline;
+    margin-top:3em;
+    text-underline-offset: 7px;
+}
+
+.for-what-div p {
+    color: rgb(122, 122, 122);
+    font-weight: bold;
+    width: 90%;
+
+}
+
+.for-what-div h1,p, button{
+    margin-bottom:1em;
+    margin-left:1em;
+    text-align: left;
+    
+
+}
+.for-what-div button{
+    margin-top:7em;
+    background:  #d30c0c;
+    color: white;
+    border-radius: 50px;
+    padding-block:1em;
+    padding-inline: 2.5em;
+    transition-duration: 0.5s;
+    border: 1px solid #d30c0c;
+}
+
+.for-what-div button:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+
+/*-----------------------------------------------------------------*/
