@@ -22,7 +22,7 @@
 
 <body>
     <header>
-        <a href=""><img src="images/Ajazz-logo.png" alt="Ajazz Logo"></a>
+        <div class="header-logo"><a href=""><img src="images/Ajazz-logo.png" alt="Ajazz Logo"></a></div>
         <nav class="header-nav">
 
             <ul>
@@ -34,13 +34,14 @@
             </ul>
 
         </nav>
+
         <nav class="header-nav" id="header-nav-right">
 
             <ul>
-                <li><a href="#">Sign In</a></li>
+                <li><a href="#" class="header-nav-link">Sign In</a></li>
                 <li>
                     <form action="/search" method="get">
-                        <button type="submit"><span class="material-symbols-outlined">search</span></button>
+                        <span class="material-symbols-outlined">search</span>
                         <input type="text" name="qdsad" placeholder="Search...">
                     </form>
                 </li>
@@ -49,19 +50,22 @@
             </ul>
 
         </nav>
+
     </header>
 
     <main>
         <section class="brand-image">
-            <h1>AJAZZ AK820 MAX</h1>
-            <p>The Ajazz AK820 Max features an ergonomic case and modern knob, enhancing the AK820 Pro's design</p>
-            <a href=""><button>Buy Now</button></a>
+            <div class="brand-image-text">
+                <h1>AJAZZ AK820 MAX</h1>
+                <p>The Ajazz AK820 Max features an ergonomic case and modern knob, enhancing the AK820 Pro's design</p>
+                <a href=""><button>Buy Now</button></a>
+            </div>
         </section>
 
         <section class="main-about">
-            <div class="about-iten">
+            <div class="about-item">
                 <div class="about-img">
-                    <img src="images/about/icon-shipping_200x.png" alt="Icon Shipping">
+                    <img src="images/about/icon-shipping.png" alt="Icon Shipping">
                 </div>
                 <div class="about-text">
                     <p><strong>Free Worldwide Shipping</strong></p>
@@ -70,9 +74,11 @@
                 </div>
             </div>
 
-            <div class="about-iten">
+            <hr>
+
+            <div class="about-item">
                 <div class="about-img">
-                    <img src="images/about/icon-warranty_200x.png" alt="Icon Warranty">
+                    <img src="images/about/icon-warranty.png" alt="Icon Warranty">
                 </div>
                 <div class="about-text">
                     <p><strong>1 Year Warranty</strong></p>
@@ -81,9 +87,11 @@
                 </div>
             </div>
 
-            <div class="about-iten">
+            <hr>
+
+            <div class="about-item">
                 <div class="about-img">
-                    <img src="images/about/icon-support_200x.png" alt="Icon Support">
+                    <img src="images/about/icon-support.png" alt="Icon Support">
                 </div>
                 <div class="about-text">
                     <p><strong>Customer Service</strong></p>
@@ -95,116 +103,155 @@
         </section>
 
         <section class="new-arrivals">
-            <div class="section-title">
-                <h1>New Arrivals</h1>
+            <div class="title-bg">
+                <div class="section-title">
+                    <h1>New Arrivals</h1>
+                </div>
             </div>
 
             <div class="top-arrivals">
                 <div class="top-arrivals-item" id="animated-image">
                     <a href="#">
                         <img src="images/newArrivals/Alice-layout.jpg" alt="75% Alice Layout Wireless Gaming Keyboard">
-                        <p>75% Alice Layout Wireless Gaming Keyboard</p>
                     </a>
-                    <p><strong>AJAZZ AKS075</strong></p>
+                    <div class="top-arrivals-text">
+                        <a href="#">
+                            <p>75% Alice Layout Wireless Gaming Keyboard</p>
+                        </a>
+                        <p><strong>AJAZZ AKS075</strong></p>
+                    </div>
                 </div>
                 <div class="top-arrivals-item" id="animated-image">
                     <a href="#">
-                        <img src="images/newArrivals/blue-layout.jpg"
+                        <img src="images/newArrivals/AK680-Max.webp"
                             alt="68% Mechanical Keyboard With Magnetic Switch">
-                        <p>68% Mechanical Keyboard With Magnetic Switch</p>
+
                     </a>
-                    <p><strong>AJAZZ AK680 MAX</strong></p>
+                    <div class="top-arrivals-text">
+                        <a href="">
+                            <p>68% Mechanical Keyboard With Magnetic Switch</p>
+                        </a>
+                        <p><strong>AJAZZ AK680 MAX</strong></p>
+                    </div>
                 </div>
                 <div class="top-arrivals-item" id="animated-image">
                     <a href="#">
                         <img src="images/newArrivals/grey-layout.jpg" alt="65% Gasket TRI-mode Mechanical Keyboard">
-                        <p>65% Gasket TRI-mode Mechanical Keyboard <br></p>
+
                     </a>
-                    <p><strong>AJAZZ AK650</strong></p>
+                    <div class="top-arrivals-text">
+                        <a href="">
+                            <p>65% Gasket TRI-mode Mechanical Keyboard <br></p>
+                        </a>
+                        <p><strong>AJAZZ AK650</strong></p>
+                    </div>
                 </div>
             </div>
-
+            <div class="title-bg">
+                <div class="section-title">
+                    <h1>Other Arrivals</h1>
+                </div>
+            </div>
             <div class="other-arrivals">
 
                 <div class="other-arrivals-item" id="animated-image">
                     <a href="#">
-                        <img src="images/otherArrivals/keyboard1.jpg" alt="Ajazz Aj129 - White">
-                        <p>AJAZZ AK680 MAX Wireless </p>
+                        <img src="images/otherArrivals/keyboard1.png" alt="AJAZZ AK680 MAX Wireless">
                     </a>
-                    <div class="price">
-                        <span class="before-price">
-                            <p>$46.99</p>
-                        </span>
-                        <span class="now-price">
-                            <p>$42.29</p>
-                        </span>
+                    <div class="other-arrivals-text">
+                        <a href="#">
+                            <p>AJAZZ AK680 MAX Wireless</p>
+                        </a>
+                        <div class="price">
+                            <span class="before-price">
+                                <p>$46.99</p>
+                            </span>
+                            <span class="now-price">
+                                <p>$42.29</p>
+                            </span>
+                        </div>
+                        <button>Shop Now</button>
                     </div>
-                    <button>Shop Now</button>
                 </div>
 
                 <div class="other-arrivals-item" id="animated-image">
                     <a href="#">
-                        <img src="images/otherArrivals/mouse1.jpg" alt="Ajazz Aj129 - White">
-                        <p>Ajazz Aj129 - White</p>
+                        <img src="images/otherArrivals/mouse1.webp" alt="AJAZZ AM3 Series">
                     </a>
-                    <div class="price">
-                        <span class="before-price">
-                            <p>$25.99</p>
-                        </span>
-                        <span class="now-price">
-                            <p>$17.29</p>
-                        </span>
+                    <div class="other-arrivals-text">
+                        <a href="">
+                            <p>AJAZZ AM3 Series - Orange</p>
+                        </a>
+                        <div class="price">
+                            <span class="before-price">
+                                <p>$119.99</p>
+                            </span>
+                            <span class="now-price">
+                                <p>$99.99</p>
+                            </span>
+                        </div>
+                        <button>Shop Now</button>
                     </div>
-                    <button>Shop Now</button>
                 </div>
 
                 <div class="other-arrivals-item" id="animated-image">
                     <a href="#">
-                        <img src="images/otherArrivals/mouse2.jpg" alt="AJAZZ Aj358 - Pink">
-                        <p>AJAZZ Aj358 - Pink</p>
+                        <img src="images/otherArrivals/headset.png" alt="Headset FirstBlood H10">
                     </a>
-                    <div class="price">
-                        <span class="before-price">
-                            <p>$29.99</p>
-                        </span>
-                        <span class="now-price">
-                            <p>$21.29</p>
-                        </span>
+                    <div class="other-arrivals-text">
+                        <a href="">
+                            <p> AJAZZ FirstBlood H10 - Purple</p>
+                        </a>
+                        <div class="price">
+                            <span class="before-price">
+                                <p>$59.99</p>
+                            </span>
+                            <span class="now-price">
+                                <p>$45.99</p>
+                            </span>
+                        </div>
+                        <button>Shop Now</button>
                     </div>
-                    <button>Shop Now</button>
                 </div>
 
                 <div class="other-arrivals-item" id="animated-image">
                     <a href="#">
-                        <img src="images/otherArrivals/keyboard2.jpg" alt="AJAZZ AK871 - White">
-                        <p>AJAZZ AK871 - White</p>
-
+                        <img src="images/otherArrivals/keyboard2.webp" alt="AJAZZ AK871 - Black">
                     </a>
-                    <div class="price">
-                        <span class="before-price">
-                            <p>$37.99</p>
-                        </span>
-                        <span class="now-price">
-                            <p>$34.19</p>
-                        </span>
+                    <div class="other-arrivals-text">
+                        <a href="">
+                            <p>AJAZZ AK871 Wireless - Black</p>
+                        </a>
+                        <div class="price">
+                            <span class="before-price">
+                                <p>$37.99</p>
+                            </span>
+                            <span class="now-price">
+                                <p>$34.19</p>
+                            </span>
+                        </div>
+                        <button>Shop Now</button>
                     </div>
-                    <button>Shop Now</button>
                 </div>
 
                 <div class="other-arrivals-item" id="animated-image">
                     <a href="#">
-                        <img src="images/otherArrivals/boungy1.jpg" alt="AJAZZ AK871 - White">
-                        <p>AJAZZ Cable Management</p>
+                        <img src="images/otherArrivals/switch.webp" alt="Ajazz Gift Switches">
                     </a>
-                    <div class="price">
-                        <span class="before-price">
-                            <p>24.99</p>
-                        </span>
-                        <span class="now-price">
-                            <p>$17.29</p>
-                        </span>
+                    <div class="other-arrivals-text">
+                        <a href="">
+                            <p>AJAZZ Gift Switches - Linear</p>
+                        </a>
+                        <div class="price">
+                            <span class="before-price">
+                                <p>15.99</p>
+                            </span>
+                            <span class="now-price">
+                                <p>$12.99</p>
+                            </span>
+                        </div>
+                        <button>Shop Now</button>
                     </div>
-                    <button>Shop Now</button>
                 </div>
 
             </div>
@@ -212,107 +259,93 @@
         </section>
 
         <section class="best-seller">
-            <div class="section-title">
-                <h1>Best Sellers</h1>
+            <div class="title-bg">
+                <div class="section-title">
+                    <h1>Best Sellers</h1>
+                </div>
             </div>
-            <div class="section-itens">
-                <div class="main">
-                    <div class="best-seller-item" id="best-seller-item-1">
-                        <div id="animated-image">
+
+            <div class="best-seller-content">
+
+                <div class="best-seller-highlights" >
+                    <div id="animated-image"> 
+                        <div class="best-seller-item" id="best-seller-item-1" >
                             <a href="#">
                                 <h3>Hot Selling</h3>
-                                <h2>AJAZZ AK820 Pro</h2>
+                                    <h2>AJAZZ AK820 Pro</h2>
                                 <p>75% Gasket-mounted Tri-mode Wirelless Mechanical Keyboard</p>
                             </a>
                         </div>
                     </div>
-                    <div class="best-seller-item" id="best-seller-item-2">
-                        <div id="animated-image">
+
+                    <div id="animated-image">
+                        <div class="best-seller-item" id="best-seller-item-2">
                             <a href="#">
                                 <h3>Hot Selling</h3>
-                                <h2>AJAZZ AK820 Max HE</h2>
+                                    <h2>AJAZZ AK820 Max HE</h2>
                                 <p>75% Gasket-mounted Mechanical Keyboard With Magnetic Switch</p>
                             </a>
                         </div>
                     </div>
-                    <div class="best-seller-item" id="best-seller-item-3">
-                        <div id="animated-image">
-                            <a href="">
+
+                    <div id="animated-image">
+                        <div class="best-seller-item" id="best-seller-item-3">
+                            <a href="#">
                                 <h3>Hot Selling</h3>
-                                <h2>Ajazz Aj159 Series</h2>
+                                    <h2>Ajazz Aj159 Series</h2>
                                 <p>Wired & Wireless Gaming Mouse</p>
                             </a>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="sub">
-                    <div class="mini">
+                <div class="best-seller-others">
+                    <div class="best-seller-mini" >
                         <div id="animated-image">
-                            <div class="best-seller-item-double">
-
-                                <div id="best-seller-item-double-1">
-
-                                    <a href="">
-                                        <h2> AJAZZ AK650</h2>
-                                    </a>
-
-                                </div>
+                            <div id="best-seller-mini-1" >
+                                <a href="">AJAZZ AK650</a>
                             </div>
                         </div>
 
-                        <div class="best-seller-item-double">
-                            <div id="animated-image">
-                                <div id="best-seller-item-double-2">
-                                    <a href="">
-                                        <h2>AJAZZ AK680 MAX</h2>
-                                    </a>
-                                </div>
+                        <div id="animated-image">
+                            <div id="best-seller-mini-2">
+                                <a href="">AJAZZ AK680 MAX</a>
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="big">
-                        <div id="animated-image">
-                            <div class="best-seller-item" id="best-seller-item-4">
-                                <a href="">
-                                    <h2>AJAZZ AK980</h2>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="best-seller-big" id="animated-image">
+                        <h2><a href="">AJAZZ AK980</a></h2>
                     </div>
 
-                    <div class="mini">
+                    <div class="best-seller-mini">
                         <div id="animated-image">
-                            <div class="best-seller-item-double">
-                                <div id="best-seller-item-double-3">
-                                    <a href="">
-                                        <h2>AJAZZ AK870</h2>
-                                    </a>
-                                </div>
+                            <div id="best-seller-mini-3">
+                                <a href="">AJAZZ AK870</a>
                             </div>
                         </div>
 
-                        <div class="best-seller-item-double">
-                            <div id="animated-image">
-                                <div id="best-seller-item-double-4">
-                                    <a href="">
-                                        <h2>AJAZZ AK820 MAX</h2>
-                                    </a>
-                                </div>
+                        <div id="animated-image">
+                            <div id="best-seller-mini-4">
+                                <a href="">AJAZZ AK820 MAX</a>
                             </div>
                         </div>
 
                     </div>
+
                 </div>
+
             </div>
 
         </section>
-
+        
         <section class="collections">
-            <div class="section-title">
-                <h1>Collections</h1>
+            <div class="title-bg">
+                <div class="section-title">
+                    <h1>Collections</h1>
+                </div>
             </div>
 
             <div class="collections-feature">
