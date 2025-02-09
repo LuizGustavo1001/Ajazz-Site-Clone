@@ -813,12 +813,13 @@ header{
 @media (min-width:1401px){
     .top-arrivals {
         grid-template-columns: repeat(3,1fr);
-        gap:10em;
+        gap:5em;
     }
 
     .other-arrivals{
         background-color: transparent;
         grid-template-columns: repeat(5,1fr);
+        gap:0.4em;
     
     }
   
