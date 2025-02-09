@@ -55,6 +55,7 @@ input{
     font-family: var(--default-font);
 
     padding:1em;
+    border: none;
 
 }
 
@@ -798,9 +799,16 @@ header img{
     gap:1em;
 }
 
-.costumers-says .material-symbols-outlined:hover{
-    color: rgb(128, 128, 0);
-    transition: color var(--animation-duration);
+.costumers-says .material-symbols-outlined{
+    color: rgb(161, 161, 0);
+}
+
+.costumer-opinion-highlight{
+    color: rgb(129, 129, 129);
+}
+
+.costumer-opinion-name{
+    font-weight: bold;
 }
 
 /* ---------------------------------------------------------------- */
@@ -808,6 +816,97 @@ header img{
 /* ---------------------------------------------------------------- */
                         /* FOOTER */
 
+
+footer{
+    background: darkred;
+    padding-top:2em;
+    
+    text-align: center;
+
+}    
+
+.footer-1 a, .footer-1 p, .footer-1 h1, .footer-1 h2{
+    color: rgb(255, 255, 255);
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--link-hover);
+}
+
+footer img{
+    width: 150px;
+
+}
+
+.footer-1 {
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    padding-inline: 5%;
+    padding-bottom:2em;
+
+}
+
+.footer-1 h1 {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+.footer-2{
+    background: black;
+    color: white;
+    padding-inline: 0%;
+
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+
+    padding-block:1em;
+}
+
+.footer-content ul li img{
+    width: 25px;
+}
+
+.footer-content ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap:2em;
+
+}
+
+.footer-content input {
+    border-radius: 50px;
+}
+
+.footer-content button {
+    background: rgb(255, 43, 43);
+    padding-block:1em;
+    padding-inline: 2em;
+}
+
+.footer-content button:hover {
+    background: white;
+    color: black;
+
+}
+
+#social-media ul{
+    display: flex;
+    flex-direction: row;
+
+
+}
 
 /* ---------------------------------------------------------------- */
 
@@ -915,6 +1014,7 @@ header img{
     
     .best-seller-mini{
         gap:1em;
+        font-size: 1.5em;
 
     }
 
@@ -937,6 +1037,12 @@ header img{
         display: flex;
         margin-bottom:3em;
         gap:1em;
+        
+    }
+
+    .for-what-div p{
+        font-size: 1.2em;
+        color: #6d6d6d;
     }
     
 }
@@ -1052,6 +1158,29 @@ header{
 
 .for-what-div div{
     width: 90%;
+    gap: 3em;
+}
+
+.for-what-div h1{
+    font-size: 2em;
+}
+
+.for-what-div p{
+    font-size: 1.5em;
+
+}
+
+
+.footer-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.footer-content ul{
+    display: flex;
+    flex-direction: column;
 }
 
 }
