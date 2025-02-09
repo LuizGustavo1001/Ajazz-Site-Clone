@@ -2,3 +2,5 @@
  Clone Site Ajazz, incialmente, sem JavaScript e sem intuito lucrativo, apenas de aprendizado
  OBS: AINDA NÃO RESPONSIVO PARA CELULARES OU OUTROS DISPOSITIVOS
 <a href="(https://luizgustavo1001.github.io/Ajazz-Site-Clone/home.html)">Link para a Página</a>
+
+https://luizgustavo1001.github.io/Ajazz-Site-Clone/
