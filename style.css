@@ -12,6 +12,10 @@
     --animation-duration: 0.3s;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding:0;
@@ -78,6 +82,7 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom:5em;
 }
 
 .section-title{
@@ -87,10 +92,13 @@ section{
     padding-top: 3em;
     padding-bottom: 1.5em;
 
-    text-decoration: underline dashed;
+    
     text-underline-offset: 5px;
 
+}
 
+.section-title h1{
+    text-decoration: underline dashed;
 }
 
 
@@ -443,7 +451,7 @@ header img{
 
 .best-seller {
     padding-inline: 5%;
-    
+
 }
 
 .best-seller a{
@@ -613,6 +621,199 @@ header img{
 /* ---------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------- */
+                        /* COLLECTIONS */
+
+.collections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:5em;
+}
+
+.collections-feature{
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    
+}
+
+.collections a{
+    color:white;
+    font-size: 1.5em;
+    transition: color var(--animation-duration);
+
+}
+
+
+.collections a:hover{
+    color: var(--link-hover);
+    transition: color var(--animation-duration);
+
+}
+
+
+.collections-feature-item{
+    width: 300px;
+    height: 400px;
+    border: 3px solid black;
+    transition: transform var(--animation-duration);
+
+}
+
+
+.collections-feature-item:hover{
+    transform: scale(1.1);
+    transition: transform var(--animation-duration);
+}
+
+.collections-feature-item button, .view-all button{
+    padding-block:1em;
+    padding-inline: 2em;
+    transition: color var(--animation-duration), background var(--animation-duration);
+
+}
+
+.collections-feature-item button:hover, .view-all button:hover{
+    background: var(--link-hover);
+    color: white;
+    transition: color var(--animation-duration), background var(--animation-duration);
+
+}
+
+#collections-feature-item-1{
+    background: url(images/collections/keyboards.webp);
+
+}
+
+#collections-feature-item-2{
+    background: url(images/collections/gaming-mice.jpg);
+
+}
+
+#collections-feature-item-3{
+    background: url(images/collections/switches-alt.jpg);
+
+}
+
+#collections-feature-item-4{
+    background: url(images/collections/headphones.webp);
+
+}
+
+#collections-feature-item-5{
+    background: url(images/collections/sales-alt.jpg);
+    
+
+}
+
+#collections-feature-item-1,#collections-feature-item-2,#collections-feature-item-3,#collections-feature-item-4,#collections-feature-item-5{
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+
+}
+
+.view-all{
+    margin-block:3em;
+    
+}
+
+
+.view-all button{
+    padding-inline: 5em;
+    font-size: 1em;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+                        /* FOR WHAT */
+
+.for-what{
+    padding-inline: 5%;
+}
+
+.for-what-div{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+
+}
+
+.for-what-div div{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+
+}
+
+.for-what-div button{
+    font-size: 1em;
+    padding-block:1em;
+    padding-inline: 2em;
+
+    transition: color var(--animation-duration), background var(--animation-duration);
+
+}
+
+.for-what-div button:hover{
+    background: var(--link-hover);
+    color: white;
+    transition: color var(--animation-duration), background var(--animation-duration);
+
+}
+
+.for-what-div img{
+    width: 400px;
+
+}
+
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+                        /* COSTUMERS */
+
+.costumers{
+    padding:5%;
+}
+
+.costumers .section-title{
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+}
+
+.costumers .section-title p{
+    color: rgb(131, 131, 131);
+}
+
+.costumers-says{
+    display: flex;
+    text-align: center;
+    gap:1em;
+}
+
+.costumers-says .material-symbols-outlined:hover{
+    color: rgb(128, 128, 0);
+    transition: color var(--animation-duration);
+}
+
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+                        /* FOOTER */
+
+
+/* ---------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------- */
 
                         /* RESPONSIVIDADE */
 
@@ -694,7 +895,7 @@ header img{
     }
 
     .best-seller-item, .best-seller-big{
-        width: 720px;
+        width: 700px;
         height: 450px;
     }
 
@@ -711,13 +912,32 @@ header img{
         height: 350px;
 
     }
-
     
     .best-seller-mini{
         gap:1em;
 
     }
 
+    .collections-feature-item{
+        width: 700px;
+        height: 500px;
+    
+    }
+
+    .collections-feature-item button{
+        padding-block:2em;
+        padding-inline: 3em;
+    }
+
+    #collections-feature-item-3{
+        background-position: bottom;
+    }
+
+    .for-what-div{
+        display: flex;
+        margin-bottom:3em;
+        gap:1em;
+    }
     
 }
 
@@ -779,8 +999,9 @@ header{
 }
 
 .best-seller-item, .best-seller-big{
-    width: 400px;
-    height: 600px;
+    width: 350px;
+    height: 500px;
+    
 
 }
 
@@ -797,14 +1018,40 @@ header{
 
 .best-seller-big{
     height: 700px;
-    margin-left: 3.5em; /* erro */
+    margin-right: 2em; /* erro */
     font-size: 1.5em;
 }
 
 .best-seller-others{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     
+}
+
+.collections-feature{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    
+}
+
+.collections-feature-item{
+    width: 250px;
+    height: 400px;
+
+}
+
+.collections-feature-item a{
+    font-size: 1em;
+
+}
+
+.for-what-div img{
+    width: 600px;
+
+}
+
+.for-what-div div{
+    width: 90%;
 }
 
 }
@@ -822,6 +1069,14 @@ header{
         gap:0.4em;
     
     }
+
+    .collections-feature{
+        display: flex;
+        flex-direction: row;
+        
+    }
   
 }
+
+
 
