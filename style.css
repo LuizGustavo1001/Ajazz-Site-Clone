@@ -224,7 +224,7 @@ header img{
 
 .brand-image {
     background: url(images/feature-keyboard.png) center/cover no-repeat;
-    height: 250px;
+    height: 60vh;
     
     color: var(--text-clr);
 
@@ -267,17 +267,13 @@ header img{
 
 .main-about{
     padding-inline: 10%;
-    padding-block:3em;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap:2em;
-
-    text-align: center;
-
+    
 }
 
 .main-about img{
-    width: 50px;
+    width: 5vh;
     
 }
 
@@ -285,12 +281,19 @@ header img{
     display: flex;
     align-items: center;
     gap:3em;
+    padding-left:1em;
+    border-left: 2px solid var(--link-hover);
 
+}
+
+.about-text {
+    width: 90%;
 }
 
 .about-text a{
     text-decoration: underline;
     text-underline-offset: 3px;
+    
 }
 
 .about-text p{
@@ -298,18 +301,16 @@ header img{
 
 }
 
-
 /* ---------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------- */
                         /* TOP ARRIVALS */
 
 .new-arrivals{
-    display: flex;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 #animated-image {
@@ -344,25 +345,26 @@ header img{
 
 }
 
-.top-arrivals-item img, .top-arrivals-item{
-    width: 350px;
-    height: 100%;
+.top-arrivals-item img, .top-arrivals-text{
+    width: 45vh;
 
 }
-
 
 .top-arrivals-text {
     background: var(--arrivals-bg);
     padding:1em;
+    padding-bottom:2em;
 
     display: flex;
     flex-direction: column;
     gap:1em;
 
+    height: 10vh;
+
 }
 
 .top-arrivals-item p strong{
-    font-size: 1.2em;
+    font-size:2.5vh;
     text-decoration: underline;
     text-underline-offset: 6px;
     
@@ -372,41 +374,42 @@ header img{
 /* ---------------------------------------------------------------- */
                         /* OTHER ARRIVALS*/
 
+.other-arrivals-section {
+    margin-bottom: 1em;
+}
+
 .other-arrivals{
     display: flex;
     flex-direction: column;
-    
-    justify-content: center;
-    align-items: center;
-    gap:2em;
+    gap:1em;
+
 }
 
 .other-arrivals-item{
-    background: var(--arrivals-bg);
-    padding:1em;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    min-width: 250px;
 
-    gap:2em;
-}
-
-.other-arrivals-item img{
-    padding-bottom:2em;
-    border-bottom: 1px solid var(--link-hover);
-}
-
-.other-arrivals-item:hover{
-    transform: scale(1.1);
+    background: lightgrey;
+    padding:1em;
 }
 
 .other-arrivals-text{
+    margin-top:1em;
+
     display: flex;
     flex-direction: column;
     gap:1em;
+
+    align-items: start;
+
+}
+
+.other-arrivals-item img{
+    padding-bottom:1em;
+    border-bottom: 2px solid var(--link-hover);
+    width: 30vh;
+
 }
 
 .other-arrivals-item button{
@@ -624,23 +627,28 @@ header img{
 /* ---------------------------------------------------------------- */
                         /* COLLECTIONS */
 
-.collections{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom:5em;
-}
 
-.collections-feature{
+.collections-feature {
     display: flex;
     flex-direction: column;
     gap:2em;
-    
 }
 
-.collections a{
-    color:white;
-    font-size: 1.5em;
+.collections-feature-item{
+    width: 50vh;
+    height: 40vh;
+    transition: transform var(--animation-duration);
+
+}
+
+.collections-feature-item:hover{
+    transform: scale(1.05);
+    transition: transform var(--animation-duration);
+}
+
+.collections-feature-item a{
+    color: white;
+    font-size: 1.3em;
     transition: color var(--animation-duration);
 
 }
@@ -652,21 +660,6 @@ header img{
 
 }
 
-
-.collections-feature-item{
-    width: 300px;
-    height: 400px;
-    border: 3px solid black;
-    transition: transform var(--animation-duration);
-
-}
-
-
-.collections-feature-item:hover{
-    transform: scale(1.1);
-    transition: transform var(--animation-duration);
-}
-
 .collections-feature-item button, .view-all button{
     padding-block:1em;
     padding-inline: 2em;
@@ -676,7 +669,7 @@ header img{
 
 .collections-feature-item button:hover, .view-all button:hover{
     background: var(--link-hover);
-    color: white;
+    color: var(--text-clr);
     transition: color var(--animation-duration), background var(--animation-duration);
 
 }
@@ -688,7 +681,7 @@ header img{
 
 #collections-feature-item-2{
     background: url(images/collections/gaming-mice.jpg);
-
+    
 }
 
 #collections-feature-item-3{
@@ -703,26 +696,32 @@ header img{
 
 #collections-feature-item-5{
     background: url(images/collections/sales-alt.jpg);
-    
 
 }
 
 #collections-feature-item-1,#collections-feature-item-2,#collections-feature-item-3,#collections-feature-item-4,#collections-feature-item-5{
-    background-position: center;
+    background-position: center center;
     background-size: cover;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2em;
     justify-content: center;
 
+    box-shadow: inset 0px 0px 7px black;
+
 }
+
+#collections-feature-item-3{
+    background-position: bottom;
+}
+
 
 .view-all{
     margin-block:3em;
     
 }
-
 
 .view-all button{
     padding-inline: 5em;
@@ -925,13 +924,6 @@ footer img{
 
 }
 
-@media (min-width: 680px){
-    .brand-image {
-        height: 60vh;
-    }
-    
-}
-
 @media (min-width:900px){
     header{
         display: flex;
@@ -968,8 +960,8 @@ footer img{
     /* ---------------------------------------------------------------- */
 
     .main-about{
+        grid-template-columns: repeat(3,1fr);
         padding-inline: 5%;
-        flex-direction: row;
     
     }
 
@@ -986,13 +978,8 @@ footer img{
 
     .other-arrivals{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-
-    }
+        grid-template-columns: repeat(3,1fr);
     
-    .other-arrivals-item{
-        padding-block: 2em;
-
     }
 
     /* ---------------------------------------------------------------- */
@@ -1027,20 +1014,20 @@ footer img{
     }
 
     /* ---------------------------------------------------------------- */
-
+    
     .collections-feature-item{
-        width: 700px;
-        height: 500px;
+        width: 80vh;
+        height: 50vh;
+        transition: transform var(--animation-duration);
     
     }
 
     .collections-feature-item button{
-        padding-block:2em;
-        padding-inline: 3em;
+        font-size:1em;
     }
 
-    #collections-feature-item-3{
-        background-position: bottom;
+    .view-all a{
+        font-size: 1.8em;
     }
 
     /* ---------------------------------------------------------------- */
@@ -1104,20 +1091,22 @@ header{
     gap:5em;
 }
 
-.top-arrivals-item img{
-    width: 400px;
-
-}
-
-.top-arrivals-text{
-    width: 370px;
-}
-
 .other-arrivals{
-    padding-inline:5%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(5,1fr);
 
+}
+
+.other-arrivals-item{
+    padding-inline: 0em;
+    padding-block:1em;
+}
+
+.other-arrivals-text{
+    width: 80%;
+}
+
+.other-arrivals-item img{
+    width: 25vh;
 }
 
 /* ---------------------------------------------------------------- */
@@ -1153,23 +1142,34 @@ header{
 }
 
 /* ---------------------------------------------------------------- */
-
-.collections-feature{
+.collections-feature {
     display: grid;
-    grid-template-columns:repeat(3,1fr);
-    
+    grid-template-columns: repeat(5,1fr);
+    gap:2em;
 }
 
 .collections-feature-item{
-    width: 250px;
-    height: 400px;
+    
+    padding-inline: 0.5em;
+    width: 25vh;
+    height: 50vh;
+    transition: transform var(--animation-duration);
 
 }
 
 .collections-feature-item a{
-    font-size: 1em;
-
+    font-size: 1.1em;
 }
+
+.collections-feature-item button {
+    font-size: 0.8em;
+}
+
+.view-all a{
+    font-size: 1.2em;
+}
+
+
 
 /* ---------------------------------------------------------------- */
 
@@ -1215,17 +1215,16 @@ header{
         gap:5em;
     }
 
-    .other-arrivals{
-        background-color: transparent;
-        grid-template-columns: repeat(5,1fr);
-        gap:0.4em;
-    
-    }
-
+/*
     .collections-feature{
         display: flex;
         flex-direction: row;
         
+    }
+*/
+    .other-arrivals{
+       gap:2em;
+    
     }
   
 }
