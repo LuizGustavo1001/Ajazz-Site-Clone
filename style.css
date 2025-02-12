@@ -1,8 +1,8 @@
-
 :root{
 
     --text-clr: #ffffff;
     --link-clr: #810000;
+    --link-hover: #d60000;
     --link-hover: #d60000;
     --subtext-clr: #dadada;
 
@@ -346,7 +346,7 @@ header img{
 }
 
 .top-arrivals-item img, .top-arrivals-text{
-    width: 45vh;
+    width: 40vh;
 
 }
 
@@ -358,7 +358,7 @@ header img{
     display: flex;
     flex-direction: column;
     gap:1em;
-
+    width: 40vh;
     height: 10vh;
 
 }
@@ -454,62 +454,62 @@ header img{
 
 
 .best-seller {
-    padding-inline: 5%;
-
-}
-
-.best-seller a{
-    color: rgb(255, 255, 255);
-    text-align: center;
-
-}
-
-.best-seller-content{
-    padding-inline: 5%;
-
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
 
-    gap:3em;
-
 }
 
-.best-seller-highlights{
+.best-seller a {
+    color: var(--text-clr);
+    
+}
+
+.best-seller-content {
     display: flex;
     flex-direction: column;
+    padding-inline: 5%;
+    gap:2em;
     align-items: center;
+    
+}
+
+.best-seller-highlights {
+    display: flex;
+    flex-direction: column;
     gap:1em;
 
+    padding-block:1em;
+
 }
 
-
 .best-seller-item{
-    width: 350px;
-    height: 350px;
+    padding-block: 1em;
+
+    width: 44vh;
+    height: 25vh;
+
     display: flex;
-    
     flex-direction: column;
     justify-content: center;
 
-    border: 3px solid black;
-   
 }
 
 .best-seller-item a{
-    display: flex;
-    flex-direction: column;
-    padding-inline:5%;
+    padding-inline: 5%;
 
-    gap:2em;
+}
+
+.best-seller-item h3{
+    font-weight: normal;
 
 }
 
 .best-seller-item h2{
-    font-size: 2em;
+    font-size: 1.7em;
     transition: color var(--animation-duration) ease-in-out;
+
 }
 
 .best-seller-item h2:hover{
@@ -518,12 +518,97 @@ header img{
     
 }
 
-.best-seller-others{
+#best-seller-item-1{
+    background: url(images/bestSellers/ak820.jpg);
+    background-position: bottom;
+
+}
+
+#best-seller-item-2{
+    background: url(images/bestSellers/ak820-max-he.webp);
+    background-position: center;
+
+}
+
+#best-seller-item-3{
+    background: url(images/bestSellers/aj159alt.jpg);
+    background-position: bottom;
+
+}
+
+
+#best-seller-item-1, 
+#best-seller-item-2,
+#best-seller-item-3{
+    border: 2px solid black;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+    
+    background-size: cover;
+
+}
+
+.best-seller-others {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap:2em;
+    gap:1em;
     text-align: center;
+
+}
+
+.best-seller-mini{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1em;
+
+}
+
+#best-seller-mini-1{
+    background: url(images/bestSellers/ak650.jpg);
+    
+}
+
+#best-seller-mini-2{
+    background: url(images/bestSellers/ak680alt.jpg);
+
+}
+
+#best-seller-mini-3{
+    background: url(images/bestSellers/ak870.jpg);
+
+}
+
+#best-seller-mini-4{
+    background: url(images/bestSellers/ak820-max.jpg);
+
+}
+
+#best-seller-mini-1,#best-seller-mini-2,#best-seller-mini-3,#best-seller-mini-4{
+    width: 22vh;
+    height: 17vh;
+    padding-block:1em;
+
+    background-position: center;
+    background-size: cover;
+
+    border: 2px solid black;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.best-seller-big{
+    background: url(images/bestSellers/AK980.webp);
+    width: 46.5vh;
+    height: 25vh;
+
+    background-position: center;
+    background-size: cover;
+
+    border: 2px solid black;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+
+    padding-top:1em;
 
 }
 
@@ -551,77 +636,6 @@ header img{
 
 }
 
-.best-seller-mini{
-    display: flex;
-    gap:0.5em;
-
-}
-
-#best-seller-item-1{
-    background: url(images/bestSellers/ak820alt.jpg);
-    
-}
-
-#best-seller-item-2{
-    background: url(images/bestSellers/ak820-max-he.jpg);
-
-}
-
-#best-seller-item-3{
-    background: url(images/bestSellers/aj159alt.jpg);
-
-}
-
-.best-seller-big{
-    background: url(images/bestSellers/AK980.webp);
-    width: 350px;
-    height: 350px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: 3px solid black;
-}
-
-#best-seller-item-1, #best-seller-item-2, #best-seller-item-3, .best-seller-big{
-    background-size: cover;
-
-}
-
-#best-seller-mini-1{
-    background: url(images/bestSellers/ak650.jpg);
-    
-}
-
-#best-seller-mini-2{
-    background: url(images/bestSellers/ak680alt.jpg);
-
-}
-
-#best-seller-mini-3{
-    background: url(images/bestSellers/ak870.jpg);
-
-}
-
-#best-seller-mini-4{
-    background: url(images/bestSellers/ak820-max.jpg);
-
-}
-
-#best-seller-mini-1, #best-seller-mini-2, #best-seller-mini-3, #best-seller-mini-4{
-    width: 175px;
-    height: 175px;
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: 3px solid black;
-}
-
 /* ---------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------- */
@@ -632,11 +646,12 @@ header img{
     display: flex;
     flex-direction: column;
     gap:2em;
+
 }
 
 .collections-feature-item{
-    width: 50vh;
-    height: 40vh;
+    width: 45vh;
+    height: 35vh;
     transition: transform var(--animation-duration);
 
 }
@@ -644,6 +659,7 @@ header img{
 .collections-feature-item:hover{
     transform: scale(1.05);
     transition: transform var(--animation-duration);
+
 }
 
 .collections-feature-item a{
@@ -661,7 +677,7 @@ header img{
 }
 
 .collections-feature-item button, .view-all button{
-    padding-block:1em;
+    padding-block:1.2em;
     padding-inline: 2em;
     transition: color var(--animation-duration), background var(--animation-duration);
 
@@ -733,13 +749,19 @@ header img{
 /* ---------------------------------------------------------------- */
                         /* FOR WHAT */
 
-.for-what{
+.for-what {
     padding-inline: 5%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap:3em;
 }
 
 .for-what-div{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
 
@@ -748,7 +770,7 @@ header img{
 .for-what-div div{
     display: flex;
     flex-direction: column;
-    gap:1em;
+    gap:2em;
 
 }
 
@@ -769,8 +791,8 @@ header img{
 }
 
 .for-what-div img{
-    width: 400px;
-
+    width: 50vh;
+    margin-block:1em;
 }
 
 /* ---------------------------------------------------------------- */
@@ -779,7 +801,7 @@ header img{
                         /* COSTUMERS */
 
 .costumers{
-    padding:5%;
+    padding-inline:5%;
 }
 
 .costumers .section-title{
@@ -984,33 +1006,39 @@ footer img{
 
     /* ---------------------------------------------------------------- */
 
-    .best-seller-big{
-        background-position: center;
+    .best-seller-highlights{
+        gap:2em;
+    }
+
+    #best-seller-mini-1,#best-seller-mini-2,#best-seller-mini-3,#best-seller-mini-4{
+        width: 38.8vh;
+        height: 30vh;
     }
 
     .best-seller-item, .best-seller-big{
-        width: 700px;
-        height: 450px;
-    }
-
-    #best-seller-item-1, #best-seller-item-3{
-        background-position: bottom;
-    }
-
-    #best-seller-item-2{
-        background-position: top;
-    }
-
-    #best-seller-mini-1, #best-seller-mini-2, #best-seller-mini-3, #best-seller-mini-4{
-        width: 350px;
-        height: 350px;
-
-    }
+        width: 80vh;
+        height: 50vh;
     
-    .best-seller-mini{
-        gap:1em;
-        font-size: 1.5em;
+    }
 
+    .best-seller-item a{
+        display: flex;
+        flex-direction: column;
+
+        gap:1em;
+
+    }
+
+    .best-seller-item h3{
+        font-size: 1.5em;
+    }
+
+    .best-seller-item h2{
+        font-size: 2.5em;
+    }
+
+    .best-seller-item p{
+        font-size: 1.2em;
     }
 
     /* ---------------------------------------------------------------- */
@@ -1111,41 +1139,72 @@ header{
 
 /* ---------------------------------------------------------------- */
 
-.best-seller-item, .best-seller-big{
-    width: 350px;
-    height: 500px;
-    
-
-}
-
 .best-seller-highlights{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap:4em;
+    gap:3em;
+
+}
+
+#best-seller-mini-1,#best-seller-mini-2,#best-seller-mini-3,#best-seller-mini-4{
+    width: 38.8vh;
+    height: 30vh;
+
+}
+
+.best-seller-others {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    gap:6em;
+
 }
 
 .best-seller-mini{
+    display: flex;
     flex-direction: column;
-    font-size: 2em;
+
+}
+
+.best-seller-mini a{
+    font-size: 1.5em;
+
+}
+
+.best-seller-item{
+    width: 45vh;
+    height: 60vh;
+
 }
 
 .best-seller-big{
-    height: 700px;
-    margin-right: 2em; /* erro */
-    font-size: 1.5em;
-}
-
-.best-seller-others{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 45vh;
+    height: 69vh;
     
 }
 
+.best-seller-item h3{
+    font-size: 1.2em;
+
+}
+
+.best-seller-item h2{
+    font-size: 1.8em;
+
+}
+
+.best-seller-item p{
+    font-size: 1em;
+
+}
 /* ---------------------------------------------------------------- */
+
 .collections-feature {
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap:2em;
+
 }
 
 .collections-feature-item{
@@ -1159,14 +1218,17 @@ header{
 
 .collections-feature-item a{
     font-size: 1.1em;
+
 }
 
 .collections-feature-item button {
     font-size: 0.8em;
+
 }
 
 .view-all a{
     font-size: 1.2em;
+
 }
 
 
@@ -1174,7 +1236,16 @@ header{
 /* ---------------------------------------------------------------- */
 
 .for-what-div img{
-    width: 600px;
+    width: 80vh;
+
+}
+
+
+.for-what-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
 
 }
 
@@ -1188,7 +1259,7 @@ header{
 }
 
 .for-what-div p{
-    font-size: 1.5em;
+    font-size: 1.3em;
 
 }
 
