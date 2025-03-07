@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="icon/ajazz-icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../icon/ajazz-icon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../style.css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
 
@@ -17,7 +20,7 @@
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <title>AJAZZ Store</title>
+    <title>AJAZZ Store - Home</title>
 </head>
 
 <body>
@@ -26,11 +29,11 @@
         <nav class="header-nav">
 
             <ul>
-                <li><a href="#" class="header-nav-link">Home</a></li>
-                <li><a href="#" class="header-nav-link">About</a></li>
+                <li><a href="home.html" class="header-nav-link">Home</a></li>
+                <li><a href="../about-page/about.html" class="header-nav-link">About</a></li>
                 <li><a href="#" class="header-nav-link">Sale</a></li>
                 <li><a href="#" class="header-nav-link">Products</a></li>
-                <li><a href="#" class="header-nav-link">Contact</a></li>
+                <li><a href="../contacts/contacts.html" class="header-nav-link">Contact</a></li>
             </ul>
 
         </nav>
@@ -40,9 +43,9 @@
             <ul>
                 <li><a href="#" class="header-nav-link">Sign In</a></li>
                 <li>
-                    <form action="/search" method="get">
-                        <span class="material-symbols-outlined">search</span>
-                        <input type="text" name="qdsad" placeholder="Search...">
+                    <form action="itens.php" method="post" autocomplete="off">
+                        <label for="isearch"><span class="material-symbols-outlined">search</span></label>
+                        <input type="text" name="search" id="isearch" placeholder="Search..." required>
                     </form>
                 </li>
                 <li><a href="#"><span class="material-symbols-outlined">favorite</span></a></li>
@@ -519,25 +522,25 @@
                 <ul>
                     <li>
                         <a href="https://www.facebook.com/ajazzofficial/" target="_blank">
-                            <img src="images/footer/facebook.png" alt="Facebook Icon">
+                            <img src="../footer/facebook.png" alt="Facebook Icon">
                         </a>
                     </li>
                     <li>
                         <a href="https://x.com/ajazzkeyboard" target="_blank">
-                            <img src="images/footer/x.webp" alt="X / Twitter Icon">
+                            <img src="../footer/x.webp" alt="X / Twitter Icon">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/ajazz_brand/" target="_blank">
-                            <img src="images/footer/instagram.png" alt="Instagram Icon">
+                            <img src="../footer/instagram.png" alt="Instagram Icon">
                         </a>
                     </li>
                 </ul>
                 <h2>Newsletter Sign Up</h2>
                 <p>Recieve our latest updates about our products and promotions</p>
-                <form action="/search" method="get">
-                    <input type="text" name="" placeholder="Your Email Address">
-                    <a href="#"><button>Submit</button></a>
+                <form action="../itens.php" method="get">
+                    <input type="email" name="email" id="iemail" placeholder="Your Email Address" required>
+                    <span class="footer-submit"><input type="submit" value="Submit"></span>
                 </form>
             </div>
         </div>

@@ -1,0 +1,178 @@
+
+
+header{
+    display: grid;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap:2em;
+    background: #000000;
+
+}
+
+header img{
+    width: 120px;
+    margin-top:2em;
+
+}
+
+.header-logo {
+    transition: transform var(--animation-duration) ease-in-out;
+
+
+} 
+
+
+.header-logo:hover {
+    transform: scale(1.05);
+    transition: transform var(--animation-duration) ease-in-out;
+
+}
+
+.header-nav ul{
+    display: flex;
+
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    gap:1em;
+
+}
+
+.header-nav ul li{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.header-nav a{
+    color: var(--text-clr);
+    font-size: 1.2em;
+
+}
+
+.header-nav a:hover{
+    color: white;
+}
+
+
+.header-nav form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1em;
+
+}
+
+.header-nav-link {
+    white-space: nowrap;
+    position: relative;
+    text-decoration: none;
+    position: relative;
+    white-space: nowrap;
+
+}
+
+.header-nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: var(--text-clr);
+    width: 0;
+    height: 1px;
+    transition: width 0.3s ease-in-out;
+
+}
+
+.header-nav-link:hover::after {
+    width: 100%;
+
+}
+
+#header-nav-right {
+    margin-block:2em;
+
+}
+
+#header-nav-right ul{
+    display: flex;
+    gap:2em;
+
+}
+
+#header-nav-right a{
+    font-weight: normal;
+
+}
+
+#header-nav-right form .material-symbols-outlined{
+    display: none;
+
+}
+
+#header-nav-right input{
+    border:none;
+    border-radius: 50px;
+
+}
+
+
+
+@media (max-width:570px){    
+
+    #header-nav-right ul{
+        gap:1em;
+
+    }
+
+}
+
+@media (min-width: 900px) {
+    header{
+        display: flex;
+        align-items: baseline;
+
+        padding-block: 1em;
+        padding-inline:5%;
+
+        font-size: 0.8em;
+        gap:5em;
+
+    }
+
+    #header-nav-right form .material-symbols-outlined{
+        display: block;
+        color: var(--text-clr);
+    }
+}
+
+
+@media (min-width:1240px){
+    header{
+        display: flex;
+        align-items: baseline;
+        
+    }
+    
+    .header-nav ul{
+        gap:1em;
+        font-size:2em;
+    
+    }
+    
+    .header-nav a{
+        font-size: 1em;
+    
+    }
+    
+    #header-nav-right a{
+        font-size: 0.8em;
+    
+    }
+
+
+}

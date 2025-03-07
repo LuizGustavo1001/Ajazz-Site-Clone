@@ -1,0 +1,124 @@
+:root{
+    --link-hover: #d60000;
+
+    --animation-duration: 0.3s;
+
+    --form-border: rgb(156, 156, 156);
+
+}
+
+main {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+
+}
+
+.forms {
+    text-align: left;
+
+}
+
+.forms-title{
+    margin-bottom:1.5em;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+
+}
+
+.forms-title h1{
+    font-size: 1.7em;
+
+}
+
+.forms-title hr{
+    width: 10vw;
+    border: 1px dashed black;
+
+}
+
+.forms-title p{
+    font-size: 1.1em;
+
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    gap:0.5em;
+
+}
+
+.form-item input, textarea{
+    border: 1px solid var(--form-border);
+    padding:0.5em;
+
+}
+
+.form-submitter input{
+    border-radius: 50px;
+    padding-inline: 2em;
+    padding-block:1em;
+    font-size: 1em;
+
+    border:none;
+
+    transition: background var(--animation-duration) ease-in-out;
+
+}
+
+.form-submitter input:hover{
+    background: var(--link-hover);
+    color: white;
+
+}
+
+#required-field:after{
+    content: " *";
+    color: #d60000;
+
+}
+
+
+.support-info {
+    margin-block: 4em;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+
+}
+
+.support-info h1{
+    font-size: 1.2em;
+
+}
+
+.support-info p{
+    font-size: 0.9em;
+
+}
+
+
+@media (min-width: 1240px){
+    main{
+        flex-direction: row;
+        gap: 5em;
+
+        padding: 3%;
+
+    }
+
+    .forms-title hr{
+        width: 5vw;
+    
+    }
+}

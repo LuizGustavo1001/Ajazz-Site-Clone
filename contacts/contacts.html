@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AJAZZ Store - Contacts</title>
+    
+        <link rel="stylesheet" href="contacts.css">
+        <link rel="stylesheet" href="../header.css">
+        <link rel="stylesheet" href="../footer.css">
+        <link rel="stylesheet" href="../style.css">
+
+        <link rel="shortcut icon" href="../icon/ajazz-icon.ico" type="image/x-icon">
+    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+    
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+        </style>
+    
+    
+    </head>
+<body>
+
+    <header>
+        <div class="header-logo"><a href=""><img src="../home/images/Ajazz-logo.png" alt="Ajazz Logo"></a></div>
+        <nav class="header-nav">
+
+            <ul>
+                <li><a href="../home/home.html" class="header-nav-link">Home</a></li>
+                <li><a href="../about-page/about.html" class="header-nav-link">About</a></li>
+                <li><a href="#" class="header-nav-link">Sale</a></li>
+                <li><a href="#" class="header-nav-link">Products</a></li>
+                <li><a href="../contacts/contacts.html" class="header-nav-link" id="selected-tab">Contact</a></li>
+            </ul>
+
+        </nav>
+
+        <nav class="header-nav" id="header-nav-right">
+
+            <ul>
+                <li><a href="#" class="header-nav-link">Sign In</a></li>
+                <li>
+                    <form action="about-itens.php" method="post" autocomplete="off">
+                        <label for="isearch"><span class="material-symbols-outlined">search</span></label>
+                        <input type="text" name="search" id="isearch" placeholder="Search..." required>
+                    </form>
+                </li>
+                <li><a href="#"><span class="material-symbols-outlined">favorite</span></a></li>
+                <li><a href="#"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+        <section class="forms">
+            <div class="forms-title">
+                <h1>Contact Us</h1>
+                <hr>
+                <p>
+                    If you need to attach pictures or video please consider compressing them or uploading them to a sharing service like google drive or dropbox. You can also send us an email directly to support@epomaker.com
+                </p>
+            </div>
+
+            <form action="contact-itens.php" method="post" autocomplete="on">
+                <fieldset>
+                    <div class="form-item">
+                        <label for="iname"> Name </label>
+                        <input type="text" name="name" id="iname" placeholder="Insert your Name Here" minlength="5" maxlength="50">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="inumber"> Phone </label>
+                        <input type="tel" name="number" id="inumber" placeholder="Insert your Number Here">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="iemail" id="required-field">Email</label>
+                        <input type="email" name="email" id="iemail" placeholder="Insert your Email Here" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="itext-box" id="required-field">Your Coment</label>
+                        <textarea name="text-box" id="itext-box" placeholder="Leave your Comment Here" cols="50" rows="10"></textarea>
+                    </div>
+
+                    <div class="form-submitter">
+                        <input type="submit" value="Submit Contact">
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="support-info">
+            <h1>SUPPORT INFORMATION</h1>
+            <p>Please Provide your order number and state your issue clearly</p>
+            <p>
+                Attach photos and videos to show that your product is incorrect / missing Once the issue has been confirmed, we will arrange for a replacement or refund (where applicable).
+            </p>
+            <p>
+                If the return is needed, the shipping fee may be covered by issuing a shipping label or reimbursement after we receive and check that the product is functioning well
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-1">
+            <div class="footer-content">
+                <a href="home.html"><img src="../home/images/Ajazz-logo.png" alt="AJAZZ Logo"></a>
+                <p>
+                    Established in 2009, Ajazz has gained a reputation for affordable peripherals in the gaming world.
+                    With the ambition of crafting every peripheral equipment extraordinary, we at Ajazz are motivated to
+                    integrate groundbreaking concepts and original aesthetics into keyboards, mouses, earphones, office
+                    sets, gaming peripherals, etc.
+                </p>
+            </div>
+            <div class="footer-content">
+                <h1>Shop By</h1>
+                <ul>
+                    <li><a href="">All Products</a></li>
+                    <li><a href="">Mechanical Keyboards</a></li>
+                    <li><a href="">Gaming Mice</a></li>
+                    <li><a href="">DIY Kits</a></li>
+                    <li><a href="">Mechanical Switches</a></li>
+                    <li><a href="">Keycaps</a></li>
+                    <li><a href="">Headphones/Earphones</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h1>Costumer Service</h1>
+                <ul>
+                    <li><a href="">Shipping Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-content" id="social-media">
+                <h1>Follow Us</h1>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/ajazzofficial/" target="_blank">
+                            <img src="../footer/facebook.png" alt="Facebook Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/ajazzkeyboard" target="_blank">
+                            <img src="../footer/x.webp" alt="X / Twitter Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ajazz_brand/" target="_blank">
+                            <img src="../footer/instagram.png" alt="Instagram Icon">
+                        </a>
+                    </li>
+                </ul>
+                <h2>Newsletter Sign Up</h2>
+                <p>Recieve our latest updates about our products and promotions</p>
+                <form action="contact-itens.php" method="post">
+                    <input type="email" name="email" id="iemail" placeholder="Your Email Address" required>
+                    <span class="footer-submit"><input type="submit" value="Submit"></span>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-2">
+            <p>&copy 2009 - 2025 AJAZZ. All Rights Reserved.</p>
+            <p>
+                <strong>
+                    DISCLAIMER: Nenhuma das imagens utilizadas na página foram autorizadas pelo usuário que a
+                    postou, pois o site não possui fins lucrativos, apenas de aprendizado das linguagens.
+                </strong>
+            </p>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
