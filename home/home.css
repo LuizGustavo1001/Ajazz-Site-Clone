@@ -1,6 +1,9 @@
 
 
+main .best-seller a:hover{
+    color: white;
 
+}
 
 section{
     display: flex;
