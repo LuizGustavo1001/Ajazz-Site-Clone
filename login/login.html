@@ -4,26 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AJAZZ Store - About</title>
-
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="../footer.css">
-    <link rel="stylesheet" href="../header.css">
-    <link rel="stylesheet" href="../style.css">
 
     <link rel="shortcut icon" href="../icon/ajazz-icon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../style.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
-    </style>
-
+    <title>AJAZZ Store - Login</title>
 
 </head>
 
@@ -35,7 +32,7 @@
 
             <ul>
                 <li><a href="../home/home.html" class="header-nav-link">Home</a></li>
-                <li><a href="about.html" class="header-nav-link" id="selected-tab">About</a></li>
+                <li><a href="../about-page/about.html" class="header-nav-link">About</a></li>
                 <li><a href="#" class="header-nav-link">Sale</a></li>
                 <li><a href="#" class="header-nav-link">Products</a></li>
                 <li><a href="../contacts/contacts.html" class="header-nav-link">Contact</a></li>
@@ -46,9 +43,9 @@
         <nav class="header-nav" id="header-nav-right">
 
             <ul>
-                <li><a href="../login/login.html" class="header-nav-link">Sign In</a></li>
+                <li><a href="../login/login.html" class="header-nav-link" id="selected-tab">Sign In</a></li>
                 <li>
-                    <form action="about-itens.php" method="post" autocomplete="off">
+                    <form action="itens.php" method="post" autocomplete="off">
                         <label for="isearch"><span class="material-symbols-outlined">search</span></label>
                         <input type="text" name="search" id="isearch" placeholder="Search..." required>
                     </form>
@@ -62,78 +59,36 @@
     </header>
 
     <main>
-        <section class="history">
-            <div class="history-title">
-                <h1>Our History</h1>
-                <p>
-                    Ajazz has a long story providing gamers and typist around the world some of the best products with
-                    quality and affordability in mind.
-                </p>
-                <hr>
+        <section class="login">
+            <h1>Sign In</h1>
+            <hr>
+            <form action="cadastro-login.php" method="post">
+                <div class="login-input">
+                    <label for="iemail">Email Adress</label>
+                    <input type="email" name="email" id="iemail" placeholder="Your Email Address" required>
+                </div>
+
+                <div class="login-input">
+                    <label for="ipassword">Password</label>
+                    <input type="password" name="password" id="ipassword" placeholder="Your Password" required>
+                </div>
+
+                <div class="login-submit">
+                    <input type="submit" value="Login">
+                </div>
+
+                <a href="#">Forgot your Password?</a>
+
+            </form>
+            <hr>
+            <div class="create-account">
+                <p>Don't have an Account?</p>
+                <a href="cadastro/cadastro.html"><button class="creat-account-button">Create Account</button></a>
             </div>
-
-            <div class="history-topics">
-                <div class="h-topic">
-                    <img src="about-images/about-1.png" alt="Keyboard Image 1">
-                    <div class="h-topic-text">
-                        <h2>Beginning</h2>
-                        <p>
-                            Established in 2009, Ajazz has gained a reputation for affordable peripherals in the gaming
-                            world. With the ambition of crafting every peripheral equipment extraordinary, we at Ajazz
-                            are motivated to integrate groundbreaking concepts and original aesthetics into keyboards,
-                            mouses, earphones, office sets, gaming peripherals, etc.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="h-topic" id="pc-inverter">
-                    <img src="about-images/about-2.png" alt="Keyboard Image 2">
-                        <div class="h-topic-text">
-                            <h2>Development</h2>
-                            <p>
-                                We constantly listen to every customer’s voice and always lay great emphasis on the
-                                users’ experience during the procedure from ergonomic product development to customer
-                                service. Supported by completely developed supply chains and secured logistics, we are
-                                able to bring premium affordable products with top-notch customer services to each of
-                                you all over the world. Focusing on innovation and quality, we not only create our own
-                                switches and products but also have fostered strong collaborations with Cherry and
-                                Gateron to fulfill the increasing demand of office and gaming users.
-                            </p>
-                        </div>
-                </div>
-                <div class="h-topic">
-                    <img src="about-images/about-3.png" alt="Keyboard Image 3">
-                    <div class="h-topic-text">
-                        <h2>Our Goal</h2>
-                        <p>
-                            To explore more possibilities, we have developed keyboards in different layouts including
-                            full size, TKL, and various compact sizes, along with gaming mouses, TWS, and gamepads. Our
-                            goal is to amplify innovative voices and to benefit more and more users by creative
-                            achievements.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="h-topic" id="pc-inverter">
-                    <img src="about-images/about-4.png" alt="Keyboard Image 4">
-                        <div class="h-topic-text">
-                            <h2>About Ajazz Brand</h2>
-                            <p>
-                                Ajazz has been always dedicated to bring the nature to the gaming world. Over the years,
-                                our
-                                creative team have never ceased to search for the balance in invigorating and functional
-                                designs. We have introduced the series of keyboards with gasket mount to envisage our
-                                ideas,
-                                such as AC081, AK816, AC067 Cheese, AK966 in three themes, etc.
-                            </p>
-                        </div>
-                </div>
-            </div>
+            
 
         </section>
-
     </main>
-
 
     <footer>
 
@@ -188,7 +143,7 @@
                 </ul>
                 <h2>Newsletter Sign Up</h2>
                 <p>Recieve our latest updates about our products and promotions</p>
-                <form action="about-itens.php" method="post">
+                <form action="../itens.php" method="get">
                     <input type="email" name="email" id="iemail" placeholder="Your Email Address" required>
                     <span class="footer-submit"><input type="submit" value="Submit"></span>
                 </form>
@@ -206,8 +161,6 @@
         </div>
 
     </footer>
-
-
 
 </body>
 

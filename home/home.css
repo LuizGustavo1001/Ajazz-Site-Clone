@@ -1,5 +1,4 @@
 
-
 main .best-seller a:hover{
     color: white;
 
@@ -670,6 +669,14 @@ section{
 /* ---------------------------------------------------------------- */
 
                         /* RESPONSIVIDADE */
+
+@media (max-width:480px){
+    .for-what-div img{
+        width: 90%;
+    }
+
+}
+
 
 @media (min-width:900px){
 
