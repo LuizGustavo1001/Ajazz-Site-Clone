@@ -11,8 +11,6 @@
     --animation-duration: 0.3s;
 }
 
-
-
 footer{
     background: darkred;
     padding-top:2em;
@@ -28,6 +26,7 @@ footer{
 footer a:hover{
     text-decoration: underline;
     color: var(--link-hover);
+   
 }
 
 footer img{
