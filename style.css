@@ -5,7 +5,7 @@
     --link-hover: #d60000;
     --subtext-clr: #dadada;
 
-    --arrivals-bg: #cccccc;
+    --arrivals-bg: rgba(250, 221, 221, 0.425);
 
     --default-font: "Jost", sans-serif;
     --animation-duration: 0.3s;

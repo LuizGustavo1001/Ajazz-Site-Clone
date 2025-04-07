@@ -18,6 +18,16 @@ header img{
 
 }
 
+header #isearch{
+    transition: background 0.3s ease-in-out;
+
+}
+
+header #isearch:hover{
+    background: rgb(250, 230, 230);
+
+}
+
 .header-logo {
     transition: transform var(--animation-duration) ease-in-out;
 
