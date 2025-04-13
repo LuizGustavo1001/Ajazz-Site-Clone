@@ -9,7 +9,7 @@
 
 #required-item:after{
     content: " *";
-    color: red;
+    color: var(--link-hover);
 
 }
 

@@ -1,5 +1,5 @@
 :root{
-
+    --default-bg: white;
     --text-clr: #ffffff;
     --link-clr: #810000;
     --link-hover: #d60000;
@@ -14,7 +14,8 @@
 
 body {
     overflow-x: hidden;
-
+    background: var(--default-bg);
+    
 }
 
 *{

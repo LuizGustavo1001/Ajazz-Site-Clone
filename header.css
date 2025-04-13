@@ -1,4 +1,7 @@
-
+:root{
+    --header-bg: black;
+    --header-link-hover-clr: white;
+}
 
 header{
     display: grid;
@@ -8,7 +11,7 @@ header{
     text-align: center;
 
     gap:2em;
-    background: #000000;
+    background: var(--header-bg);
 
 }
 
@@ -19,18 +22,17 @@ header img{
 }
 
 header #isearch{
-    transition: background 0.3s ease-in-out;
+    transition: background var(--animation-duration) ease-in-out;
 
 }
 
 header #isearch:hover{
-    background: rgb(250, 230, 230);
+    background: rgb(168, 168, 168);
 
 }
 
 .header-logo {
     transition: transform var(--animation-duration) ease-in-out;
-
 
 } 
 
@@ -65,7 +67,8 @@ header #isearch:hover{
 }
 
 .header-nav a:hover{
-    color: white;
+    color: var(--header-link-hover-clr);
+
 }
 
 
@@ -133,7 +136,6 @@ header #isearch:hover{
 
 
 @media (max-width:570px){    
-
     #header-nav-right ul{
         gap:1em;
 
@@ -157,7 +159,9 @@ header #isearch:hover{
     #header-nav-right form .material-symbols-outlined{
         display: block;
         color: var(--text-clr);
+
     }
+    
 }
 
 
@@ -183,6 +187,5 @@ header #isearch:hover{
         font-size: 0.8em;
     
     }
-
 
 }

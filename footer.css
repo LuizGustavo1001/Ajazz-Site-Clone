@@ -1,18 +1,13 @@
 :root{
+    --footer-bg: darkred;
+    --footer-cop-bg: black;
+    --footer-font-clr: white;
+    --footer-submit-button-clr: red;
 
-    --text-clr: #ffffff;
-    --link-clr: #810000;
-    --link-hover: #d60000;
-    --subtext-clr: #dadada;
-
-    --arrivals-bg: #cccccc;
-
-    --default-font: "Jost", sans-serif;
-    --animation-duration: 0.3s;
 }
 
 footer{
-    background: darkred;
+    background: var(--footer-bg);
     padding-top:2em;
     
     text-align: center;
@@ -20,7 +15,7 @@ footer{
 }    
 
 .footer-1 a, .footer-1 p, .footer-1 h1, .footer-1 h2{
-    color: rgb(255, 255, 255);
+    color: var(--footer-font-clr);
 }
 
 footer a:hover{
@@ -46,17 +41,19 @@ footer img{
 .footer-1 h1 {
     text-decoration: underline;
     text-underline-offset: 5px;
+
 }
 
 .footer-content{
     display: flex;
     flex-direction: column;
     gap:1em;
+
 }
 
 .footer-2{
-    background: black;
-    color: white;
+    background: var(--footer-cop-bg);
+    color: var(--footer-font-clr);
     padding-inline: 5%;
 
     display: flex;
@@ -85,6 +82,7 @@ footer img{
 .footer-content input {
     border-radius: 50px;
     margin-bottom: 1em;
+
 }
 
 #social-media ul{
@@ -94,14 +92,16 @@ footer img{
 }
 
 .footer-submit input{
-    background: rgb(255, 43, 43);
+    background: var(--footer-submit-button-clr);
     color: var(--subtext-clr);
     padding-inline: 1.5em;
+
 }
 
 .footer-submit input:hover{
     background: white;
     color: black;
+
 }
 
 
