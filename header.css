@@ -41,6 +41,9 @@ header #isearch:hover{
     transform: scale(1.05);
     transition: transform var(--animation-duration) ease-in-out;
 
+    transform: rotate( -10deg);
+    transform: scale(1.05) rotate(-10deg) perspective(   ) rotateX(10deg);
+
 }
 
 .header-nav ul{
